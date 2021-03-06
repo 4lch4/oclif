@@ -1,5 +1,5 @@
 {
-  "name": "oclif",
+  "name": "@4lch4/oclif",
   "description": "oclif: create your own CLI",
   "version": "1.16.1",
   "author": "Jeff Dickey @jdxcode",
@@ -71,7 +71,7 @@
     "/lib",
     "/templates"
   ],
-  "homepage": "https://github.com/oclif/oclif",
+  "homepage": "https://github.com/4lch4/oclif",
   "keywords": [
     "oclif"
   ],
@@ -84,27 +84,20 @@
       "@oclif/plugin-warn-if-update-available",
       "@oclif/plugin-not-found"
     ],
-    "bin": "oclif",
-    "dirname": "oclif",
+    "bin": "4oclif",
+    "dirname": "4oclif",
     "macos": {
-      "identifier": "com.oclif.cli",
-      "sign": "Developer ID Installer: Heroku INC"
-    },
-    "update": {
-      "autoupdate": {
-        "rollout": 50,
-        "debounce": 60
-      },
-      "node": {
-        "version": "12.12.0"
-      },
-      "s3": {
-        "bucket": "oclif-staging",
-        "xz": true
-      }
+      "identifier": "com.4lch4.oclif"
     }
   },
-  "repository": "oclif/oclif",
+  "contributors": [
+    {
+      "name": "4lch4",
+      "email": "oclif@4lch4.dev",
+      "url": "https://4lch4.dev"
+    }
+  ],
+  "repository": "4lch4/oclif",
   "scripts": {
     "build": "rm -rf lib && tsc",
     "devcli:lint": "eslint . --ext .ts --config .eslintrc",
